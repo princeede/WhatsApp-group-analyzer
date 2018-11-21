@@ -9,9 +9,9 @@ matplotlib.style.use('ggplot')
 #'''To download the whatsApp text of your group, click on the ... button at the top right corner of you group chat,
 #click and and then click on email chat. Send the chat to your mail without the media and download to your system from your mail'''
 
-filename = r'file\\path'
-f = open(filename)
-file_read = f.read()
+filename = "C:\\Users\\Ede\\Desktop\\WhatsApp Chat with CYAA Member   Probation (3).txt"
+with open(filename, encoding="utf-8") as f:
+    file_read = f.read()
 
 #declare the re to be used
 pieces = [x.strip('\n') for x in file_read.split('\n')]
